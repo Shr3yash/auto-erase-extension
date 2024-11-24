@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Auto Erase Website Data",
+  "version": "1.0",
+  "description": "Automatically clears browser data for a specific website every 5 minutes.",
+  "permissions": ["browsingData", "alarms", "storage"],
+  "host_permissions": ["https://example.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Auto Clear Active"
+  }
+}
